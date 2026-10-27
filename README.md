@@ -1,104 +1,47 @@
-In this project, let's build a **Click Counter** by applying the concepts we have learned till now.
+# 🏠 Property Rental Platform (MERN Stack)
 
-### Refer to the image below:
+A modern, full-stack real estate and property rental web application designed to seamlessly connect property owners and tenants. Users can browse listings, view detailed property information, manage their own listings, and securely handle authentication.
 
-<br/>
-<div style="text-align: center;">
-    <img src="https://assets.ccbp.in/frontend/content/react-js/click-counter-output.gif" alt="click counter" style="max-width:70%;box-shadow:0 2.8px 2.2px rgba(0, 0, 0, 0.12)">
-</div>
-<br/>
+---
 
-### Design Files
+## 🌟 Key Features
 
-<details>
-<summary>Click to view</summary>
+* **Authentication & Authorization:** Secure user registration, password hashing using `bcryptjs`, and session control via JSON Web Tokens (JWT).
+* **Interactive UI:** Responsive navbar, dynamic property search, grid/list view, and detailed individual property pages.
+* **Property Management (CRUD):** Logged-in property hosts can create, edit, update, and delete their property listings.
+* **Multi-Image Handling:** Support for multi-photo uploads per property listing with server-side storage and existing image cleanup.
+* **Dashboard / My Properties:** Personalized view for hosts to manage active rental listings with smooth UI state updates.
 
-- [Extra Small (Size < 576px) and Small (Size >= 576px)](https://assets.ccbp.in/frontend/content/react-js/click-counter-sm-output.png)
-- [Medium (Size >= 768px), Large (Size >= 992px) and Extra Large (Size >= 1200px)](https://assets.ccbp.in/frontend/content/react-js/click-counter-lg-output.png)
+---
 
-</details>
+## 🛠️ Tech Stack
 
-### Set Up Instructions
+### Frontend
+* **React.js** — Component-driven UI development
+* **Vite** — High-performance frontend build tool and development server
+* **CSS / Tailwind CSS** — Responsive styling and layout
 
-<details>
-<summary>Click to view</summary>
+### Backend
+* **Node.js** — Asynchronous runtime environment
+* **Express.js** — RESTful API framework
+* **MongoDB & Mongoose** — NoSQL database and Object Data Modeling (ODM)
+* **JWT & Bcrypt.js** — Authentication and password security
 
-- Download dependencies by running `npm install`
-- Start up the app using `npm start`
-</details>
+---
 
-### Completion Instructions
+## 📁 Project Structure
 
-<details>
-<summary>Functionality to be added</summary>
-<br/>
-
-The app must have the following functionalities
-
-- Initially the count of the number of clicks should be 0
-- When **Click Me!** button is clicked the count of the number of clicks should be incremented by 1
-
-</details>
-
-<details>
-<summary>Implementation Files</summary>
-<br/>
-
-Use these files to complete the implementation:
-
-- `src/components/ClickCounter/index.js`
-- `src/components/ClickCounter/index.css`
-</details>
-
-### Quick Tips
-
-<details close>
-<summary>Click to view</summary>
-<br>
-
-- You can use the below cursor CSS property for buttons to set the type of mouse cursor, to show when the mouse pointer is over an element,
-
-  ```
-    cursor: pointer;
-  ```
-
-  <br/>
-   <img src="https://assets.ccbp.in/frontend/content/react-js/cursor-pointer-img.png" alt="cursor pointer" style="width:100px" />
-
-- You can use the below outline CSS property for buttons and input elements to remove the highlighting when the elements are clicked,
-
-  ```
-    outline: none;
-  ```
-
-</details>
-
-### Resources
-
-<details>
-<summary>Colors</summary>
-
-<br/>
-
-<div style="background-color: #f1f5f8 ; width: 150px; padding: 10px; color: black">Hex: #f1f5f8</div>
-<div style="background-color: #2d3a35 ; width: 150px; padding: 10px; color: white">Hex: #2d3a35</div>
-<div style="background-color: #c20a72 ; width: 150px; padding: 10px; color: white">Hex: #c20a72</div>
-<div style="background-color: #ffffff ; width: 150px; padding: 10px; color: black">Hex: #ffffff</div>
-<div style="background-color: #007bff ; width: 150px; padding: 10px; color: white">Hex: #007bff</div>
-
-</details>
-
-<details>
-<summary>Font-families</summary>
-
-- Roboto
-
-</details>
-
-> ### _Things to Keep in Mind_
->
-> - All components you implement should go in the `src/components` directory.
-> - Don't change the component folder names as those are the files being imported into the tests.
-> - **Do not remove the pre-filled code**
-> - Want to quickly review some of the concepts you’ve been learning? Take a look at the Cheat Sheets.
-# sumitkumar2812
+```text
+property-rental-app/
+├── client/                # React Frontend (Powered by Vite)
+│   ├── src/
+│   │   ├── components/    # Reusable UI components (Navbar, Cards, Forms)
+│   │   ├── pages/         # Page views (Home, Login, Signup, MyProperties)
+│   │   └── App.jsx        # Main application component & routes
+│   └── vite.config.js
+│
+└── server/                # Node.js + Express Backend
+    ├── controllers/       # Business logic for auth & properties
+    ├── models/            # Mongoose schemas (User, Property)
+    ├── routes/            # API Endpoints
+    └── server.js          # Entry point & DB connection
