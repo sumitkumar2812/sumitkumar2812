@@ -26,7 +26,8 @@ A modern, full-stack real estate and property rental web application designed to
 * **Express.js** — RESTful API framework
 * **MongoDB & Mongoose** — NoSQL database and Object Data Modeling (ODM)
 * **JWT & Bcrypt.js** — Authentication and password security
-
+#### TO SEE THE LIVE PROJECT PLEASE CLICK HERE --
+#### https://property-rental-platform-front.vercel.app/
 ---
 
 ## 📁 Project Structure
@@ -45,3 +46,4 @@ property-rental-app/
     ├── models/            # Mongoose schemas (User, Property)
     ├── routes/            # API Endpoints
     └── server.js          # Entry point & DB connection
+
